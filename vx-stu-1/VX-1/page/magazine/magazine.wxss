@@ -1,0 +1,41 @@
+/* page/magazine/magazine.wxss */
+.container{
+  padding: 0rpx 20rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head-font{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.font-one{
+  color: forestgreen;
+  font-size: 60rpx;
+  font-weight: 800;
+}
+.font-two{
+  margin-top: 30rpx;
+  font-size:40rpx;
+}
+.con-one{
+  border: 1px solid rgb(240, 234, 234);
+  display: flex;
+  flex-direction:column;
+}
+.con-img{
+  padding: 20rpx
+}
+.con-title{
+  margin: 30rpx;
+  
+}
+.con-btn{
+  margin-left: 10rpx;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1px solid #000;
+  margin: 10rpx;
+}

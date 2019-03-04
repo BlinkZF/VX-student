@@ -1,0 +1,28 @@
+小程序中可以使用绝对路径，
+在text中添加空格
+    1：decode="{{true}}"  &ensp;&ensp  是否解码  实意字符可实现效果
+        ensp：中文字符空格一半大小
+        emsp：中文字符空格大小
+        nbsp：根据字体设置的空格大小
+    2：space="ensp" 是否连续空格
+    3：selectable 文本是否可选
+
+注意：直接写在小程序中的文字是不能长按选中的(不写在标签中)  字体的大小是自动适应的
+
+小程序中图片自适应(单位 rpx)  小程序将所有机型的宽度设置为750rpx  高度为1334rpx
+    每个设备的rpx是不一样的：1rpx = 500cm(长度)/750rpx(宽度) * 在代码中设置的实际度数
+
+view 容器组件。等同于html中的div
+    属性名                       默认值
+    hover-class                  none             指定按下去的样式类，当hover-class = ”none“  没有点击效果
+    hover-stop-propagation       false            指定是否阻止本节点的祖先节点出现点击态
+    hover-start-time             50               按住多久出现点击态  单位毫秒
+    hover-stay-time              400              手指松开之后点击态保留多长时间
+
+事件绑定：
+    1:bindtap = ""/bind:tap = ""  不能阻止事件冒泡
+    2:catch  可以阻止事件冒泡 
+
+路由：
+    wx.navigateTo  保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabbar 页面。使用 wx.navigateBack 可以返回到原页面。小程序中页面栈最多十层。
+    wx.navigateBack  关闭当前页面，返回上一页面或多级页面。可通过 getCurrentPages() 获取当前的页面栈，决定需要返回几层

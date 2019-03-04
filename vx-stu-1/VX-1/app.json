@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "page/magazine/magazine",
+    "page/index/index",
+    "page/list/list"
+    
+  ]
+}

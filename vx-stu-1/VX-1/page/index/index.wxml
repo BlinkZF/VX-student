@@ -1,0 +1,6 @@
+<!--page/index/index.wxml-->
+<view class = "container" >
+    <image class = "avatar" src="/image/zf.jpg" />
+    <text class = "name" decode="{{true}}">张&ensp;&ensp;&ensp;凡</text>
+    <text class="wanmei" space="ensp" bind:tap = "toNetPageTap">完 美 世 界</text>
+</view>

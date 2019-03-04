@@ -1,0 +1,11 @@
+<!-- page/list/list.wxml -->
+<view class="container">
+  <view class="header">
+    <image class="img" src='/image/1.png'></image>
+    <text class="title">是否要卸下残红熄灭骄纵才会被施以恩宠</text>
+    <text class="title">是否要卸下残红熄灭骄纵才会被施以恩宠</text>
+  </view>
+  <view class="three">
+    <text bind:tap = "ceshi">既生厌昙骨</text>
+  </view>
+</view>

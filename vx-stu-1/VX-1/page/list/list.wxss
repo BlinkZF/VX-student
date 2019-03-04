@@ -1,0 +1,23 @@
+/* page/list/list.wxss */
+.container{
+    padding: 0 10rpx;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    width: 730rpx;
+}
+.title{
+    width: 20em;
+    font-size: 36rpx;
+    letter-spacing: 4rpx; 
+    /* 字间距  */
+    line-height: 72rpx;
+}
+.three{
+    margin-top: 20rpx;
+    text-align: right;
+}

@@ -1,0 +1,12 @@
+<!--page/magazine/magazine.wxml-->
+<view class='container'>
+  <view class='head-font'>
+    <span class = 'font-one'>阳春三月</span>
+    <span class = 'font-two'>春风十里不如你</span>
+  </view>
+  <view class='con-one'>
+    <image class='con-img' src='/image/1.png'></image>
+    <span class = "con-title">春游</span>
+    <button class='con-btn'>点击</button>
+  </view>
+</view>
