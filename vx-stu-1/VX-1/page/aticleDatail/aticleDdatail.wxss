@@ -18,8 +18,13 @@ page {
 .media-container {
   padding: 20rpx;
   height: 400rpx;
+  /* display: flex;
+  justify-content: center; */
 }
-
+/* media-container video{
+  align-items: center;
+  width: 100%;
+} */
 .media-container swiper {
   height: 400rpx;
 }

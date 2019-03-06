@@ -7,6 +7,18 @@ Page({
    */
   data: {
     aticleDdatail:{},
+    danmuList:[
+      {
+        text:"好嗨哦111",
+        color:"red",
+        time:12
+      },
+      {
+        text: "好嗨哦222",
+        color: "red",
+        time: 12
+      }
+    ]
   },
 
   /**
@@ -20,6 +32,7 @@ Page({
     request({
       url: "/" + id,
       success: function (res) {
+        console.log(res);
         that.setData({
           aticleDdatail: res
         })
