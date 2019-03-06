@@ -1,0 +1,147 @@
+/* page/type/type.wxss */
+page {
+    background-color: aquamarine
+}
+
+.head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-img {
+    width: 100%;
+}
+
+.head-text {
+    position: absolute;
+    width: 500rpx;
+    height: 200rpx;
+    background-color: #fff;
+    bottom: -80rpx;
+}
+
+.head-text text {
+    color: forestgreen;
+    padding: 20rpx;
+    font-size: 50rpx;
+    font-weight: 600
+}
+
+.head-text .head-img-two {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    right: 0rpx;
+    bottom: 0rpx;
+    padding: 20rpx;
+}
+
+.head-text .head-img-one {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    right: 0rpx;
+}
+
+.transmit {
+    position: absolute;
+    right: 80rpx;
+    bottom: 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+    background-color: #fff;
+}
+
+.transmit::after {
+    border: none;
+}
+
+/* 列表 */
+.recommend-list-container {
+    /* background-color: #ebebeb; */
+    padding: 90rpx 35rpx 0rpx;
+  }
+  
+  .per-article {
+    background-color: #fff;
+    padding-bottom: 30rpx;
+    margin-bottom: 30rpx;
+    border-radius: 10rpx;
+  }
+  
+  .per-article:last-of-type {
+    margin-bottom: 0rpx;
+  }
+  
+  .article-headdle {
+    padding: 20rpx;
+  }
+  
+  .article-head image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 20rpx 20rpx;
+  }
+  
+  .article-head text {
+    font-size: 30rpx;
+    color: #666;
+    margin: 0rpx 10rpx;
+  }
+  
+  .article-cover {
+    width: 100%;
+  }
+  
+  .article-title {
+    margin: 30rpx;
+  }
+  
+  .article-title text {
+    font-size: 40rpx;
+  }
+  
+  .article-handle-box {
+    display: flex;
+    padding: 0rpx 30rpx;
+    justify-content: space-between;
+  }
+  
+  .article-type text {
+    border: 1px solid #000;
+    padding: 10rpx 20rpx;
+  }
+  
+  .article-handle {
+    display: flex;
+  }
+  
+  /* 注意在小程序中要去掉button的boder的样式，要在伪元素中去掉 */
+  
+  .article-handle image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+  }
+  
+  .article-handle .btn-transmit {
+    background-color: transparent;
+    position: relative;
+    width: 50rpx;
+    height: 50rpx;
+  }
+  
+  .btn-transmit::after {
+    border:none;
+  }
+  
+  .article-handle .btn-transmit image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    left: -5rpx;
+  }

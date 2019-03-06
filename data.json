@@ -1,0 +1,51 @@
+{
+    "data": {
+        "title1": "鹿先森",
+        "text": "春风十里不如你",
+        "color": "color:rgb(13, 194, 82)",
+        "imgUrl": "/image/cardImage/l2.jpg",
+        "address": ["+", "春游", "济南大明湖", "北京颐和园", "西安大雁塔", "秦皇岛", "成都锦里", "···"],
+        "userImage": [{
+            "url": "/image/userImage/zf.jpg"
+        }],
+        "cardImage": [{
+                "cardImg": "/image/cardImage/l1.jpg",
+                "neffy":"张凡",
+                "andSoOn":"等",
+                "time":"2018",
+                "city":"后海",
+                "articleTitle":"灯红酒绿的酒吧街！",
+                "articleType":"怀念的时光"
+            },
+            {
+                "cardImg": "/image/cardImage/l2.jpg",
+                "neffy":"陈叶",
+                "andSoOn":"等",
+                "time":"2018",
+                "city":"后海",
+                "articleTitle":"灯红酒绿的酒吧街！",
+                "articleType":"怀念的时光"
+            },
+            {
+                "cardImg": "/image/cardImage/z1.jpg",
+                "neffy":"符一丁",
+                "andSoOn":"等",
+                "time":"2017",
+                "city":"校园时光",
+                "articleTitle":"大三的闲暇时光！",
+                "articleType":"怀念的时光"
+            },
+            {
+                "cardImg1": "/image/cardImage/z2.jpg",
+                "neffy":"赵晓洁",
+                "andSoOn":"等",
+                "time":"2017",
+                "city":"校园时光",
+                "articleTitle":"大三的闲暇时光！",
+                "articleType":"怀念的时光"
+            }
+        ],
+        "operationImage": ["/image/icon/Icon_circle_fill.png","/image/icon/Icon_circle.png", "/image/icon/Icon_more.png", "/image/icon/Icon_relay.png"
+        ]
+    }
+}

@@ -9,7 +9,7 @@ Page({
   },
   toNetPageTap:function () {  
     wx.navigateTo({
-      url:'/page/list/list',
+      url:'/page/list/list?a=10', //页面间的数据传递
     })
   },
   /**

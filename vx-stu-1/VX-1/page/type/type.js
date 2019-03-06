@@ -1,22 +1,39 @@
-// page/list/list.js
+// page/type/type.js
+var request = require('../utils/request.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    titleInfo:{}
+  },
 
-  },
-  ceshi:function () {  
-    wx.navigateBack({
-      delta:1 //这里数字写几  几跳到几层
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {//这里的参数是上一个页面传递过来的数据
-    console.log(options.a)
+  onLoad: function (options) {
+    this.getData(options)
+  },
+
+  getData:function (options) {  
+    var that = this;
+    var typeId = options.typeID
+    request({
+      url:"/"+typeId,
+      success:function (res) {
+        that.setData({
+          titleInfo:res
+        })
+      }
+    })
+  },
+  CDessay:function(val){
+    var aticleDdatailID = val.currentTarget.dataset.articletypeid
+    wx.navigateTo({
+      url: '/page/aticleDatail/aticleDdatail?aticleDdatailID=' +aticleDdatailID
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

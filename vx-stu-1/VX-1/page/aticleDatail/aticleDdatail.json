@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#00b26a",
+  "navigationBarTitleText": "成都~~",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

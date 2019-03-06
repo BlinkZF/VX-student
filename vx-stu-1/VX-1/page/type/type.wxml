@@ -1,0 +1,50 @@
+<!-- page/type/type.wxml -->
+<view class="container">
+    <view class="head">
+        <image class="head-img" src="{{titleInfo.imgSrc}}" />
+        <view class="head-text">
+            <text>{{titleInfo.title}}</text>
+            <button class="transmit" open-type="share">
+                <image class="head-img-one" src="/image/icon/Icon_relay.png" />
+            </button>
+            <image class="head-img-two" src="/image/icon/Icon_more.png" />
+        </view>
+    </view>
+    <view class='recommend-list-container'>
+        <view class="per-article" wx:for="{{titleInfo.cardImage}}" wx:key="index" wx:for-index="index">
+            <view class="article-head">
+                <!-- 用户image -->
+                <image src="{{titleInfo.userImage[0].url}}" />
+                <text class="neffy">{{item.neffy}}...</text>
+                <text class="andSoOn">{{item.andSoOn}}</text>
+                <text class="time">{{item.time}}</text>
+                <text class="city">{{item.city}}</text>
+            </view>
+            <view class="article-cover">
+                <image bindtap='CDessay'  data-articleTypeId = "{{item.essayCity}}"  mode='widthFix' src="{{item.cardImg}}" />
+            </view>
+            <view class="article-title">
+                <text class="article-title">{{item.articleTitle}}</text>
+            </view>
+            <view class="article-handle-box">
+                <view class="article-type">
+                    <text class="article-type">{{item.articleType}}</text>
+                </view>
+                <view class="article-handle">
+                    <view>
+                        <image bindtap="onMoreTap" data-articleTitle="{{item.articleTitle}}" src="{{titleInfo.operationImage[2]}}" />
+                    </view>
+                    <view>
+                        <button class="btn-transmit" open-type="share">
+                            <image src="{{titleInfo.operationImage[3]}}" />
+                        </button>
+                    </view>
+                    <view>
+                        <image bindtap="changShow" data-articleIndex="{{index}}" wx:if="{{likeList[index]}}" src="{{titleInfo.operationImage[1]}}" />
+                        <image bindtap="changShow" data-articleIndex="{{index}}" wx:else src="{{titleInfo.operationImage[0]}}" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

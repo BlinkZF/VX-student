@@ -1,12 +1,55 @@
-<!--page/magazine/magazine.wxml-->
+<!-- page/magazine/magazine.wxml -->
 <view class='container'>
+  <!-- 推荐 -->
   <view class='head-font'>
-    <span class = 'font-one'>阳春三月</span>
-    <span class = 'font-two'>春风十里不如你</span>
+    <view class='recommend-article'>
+      <text class='font-one' style="{{recommend.color}}">{{recommend.text}}</text>
+      <!-- 这里注意：在行间写数据的时候。需要用双引号包裹,{{}} -->
+      <text class='font-two'>{{recommend.title1}}</text>
+      <image mode='widthFix' class="recommend-cover" src="{{recommend.imgUrl}}" />
+    </view>
+    <view class="recommend-box">
+      <text>{{"+"}}</text>
+      <text bindtap="onArticleTypeTap" data-articleTypeId = "{{item.typeId}}" wx:for="{{recommend.address}}" wx:key="index">{{item.type}}</text>
+      <text>{{"···"}}</text>
+    </view>
   </view>
-  <view class='con-one'>
-    <image class='con-img' src='/image/1.png'></image>
-    <span class = "con-title">春游</span>
-    <button class='con-btn'>点击</button>
+  <!-- 列表 -->
+  <view class='recommend-list-container'>
+    <view class="per-article" wx:for="{{recommend.cardImage}}" wx:key="index" wx:for-index="index">
+      <view class="article-head">
+        <!-- 用户image -->
+        <image src="{{recommend.userImage[0].url}}" />
+        <text class="neffy">{{item.neffy}}...</text>
+        <text class="andSoOn">{{item.andSoOn}}</text>
+        <text class="time">{{item.time}}</text>
+        <text class="city">{{item.city}}</text>
+      </view>
+      <view class="article-cover">
+        <image mode='widthFix' src="{{item.cardImg}}" />
+      </view>
+      <view class="article-title">
+        <text class="article-title">{{item.articleTitle}}</text>
+      </view>
+      <view class="article-handle-box">
+        <view class="article-type">
+          <text class="article-type">{{item.articleType}}</text>
+        </view>
+        <view class="article-handle">
+          <view>
+            <image bindtap="onMoreTap" data-articleTitle="{{item.articleTitle}}" src="{{recommend.operationImage[2]}}" />
+          </view>
+          <view>
+            <button class="btn-transmit" open-type="share">
+              <image src="{{recommend.operationImage[3]}}" />
+            </button>
+          </view>
+          <view>
+            <image bindtap="changShow" data-articleIndex="{{index}}" wx:if="{{likeList[index]}}" src="{{recommend.operationImage[1]}}" />
+            <image bindtap="changShow" data-articleIndex="{{index}}" wx:else src="{{recommend.operationImage[0]}}" />
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

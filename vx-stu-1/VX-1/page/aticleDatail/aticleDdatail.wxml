@@ -1,0 +1,27 @@
+<wxs src = '../utils/filter.wxs' module = "filter"></wxs>
+<view class='container'>
+  <view class='title-container'>
+    <text>{{aticleDdatail.title}}</text>
+  </view>
+  <view class='authorAndDate'>
+    <text>{{aticleDdatail.author}}</text>
+    <text>{{aticleDdatail.Date}}</text>
+  </view>
+  <!-- 轮播图 -->
+  <view class='media-container'>
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" circular = "{{true}}" indicator-color="rgba(0, 200, 200, .3)">
+      <block wx:for="{{aticleDdatail.media}}" wx:key = "index">
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='contant-container'>
+    <text decode="{{true}}">{{filter(aticleDdatail.content)}}</text>
+  </view>
+  <view class='read-container'>
+    <text>阅读：{{aticleDdatail.read}}</text>
+  </view>
+</view>
+

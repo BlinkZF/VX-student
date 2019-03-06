@@ -16,9 +16,10 @@ page{
 .name{
     margin-top: 60rpx;
     color: #ccc;
-    font-size: 14rpx;
+    font-size: 30rpx;
 }
 .wanmei{
     margin-top: 200rpx;
     padding: 20rpx 40rpx;
+    font-size: 50rpx;
 }

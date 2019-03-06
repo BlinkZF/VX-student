@@ -1,22 +1,30 @@
-// page/list/list.js
+// page/aticleDatail/aticleDdatail.js
+var request = require('../utils/request.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    aticleDdatail:{},
+  },
 
-  },
-  ceshi:function () {  
-    wx.navigateBack({
-      delta:1 //这里数字写几  几跳到几层
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {//这里的参数是上一个页面传递过来的数据
-    console.log(options.a)
+  onLoad: function (options) {
+    this.getData(options.aticleDdatailID)
+  },
+  getData:function(id){
+    var that = this;
+    request({
+      url: "/" + id,
+      success: function (res) {
+        that.setData({
+          aticleDdatail: res
+        })
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

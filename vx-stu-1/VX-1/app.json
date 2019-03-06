@@ -1,8 +1,9 @@
 {
   "pages": [
     "page/magazine/magazine",
+    "page/aticleDatail/aticleDdatail",
+    "page/type/type",
     "page/index/index",
     "page/list/list"
-    
   ]
 }

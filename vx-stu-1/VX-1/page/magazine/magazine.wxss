@@ -1,41 +1,156 @@
 /* page/magazine/magazine.wxss */
-.container{
-  padding: 0rpx 20rpx; 
+page {
+  background: rgb(248, 188, 188)
+}
+
+.container {
+  padding: 0rpx 20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.head-font{
+
+.head-font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.recommend-article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.font-one{
-  color: forestgreen;
-  font-size: 60rpx;
-  font-weight: 800;
+
+.font-one {
+  position: relative;
+  font-size: 50rpx;
+  letter-spacing: 10rpx;
+  padding-bottom: 24rpx;
+  color: rgb(13, 194, 82)
 }
-.font-two{
-  margin-top: 30rpx;
-  font-size:40rpx;
+
+.font-one::after {
+  position: absolute;
+  left: 124rpx;
+  display: block;
+  bottom: 0;
+  content: "";
+  width: 170rpx;
+  height: 4rpx;
+  background-color: #999;
 }
-.con-one{
-  border: 1px solid rgb(240, 234, 234);
-  display: flex;
-  flex-direction:column;
-}
-.con-img{
-  padding: 20rpx
-}
-.con-title{
-  margin: 30rpx;
-  
-}
-.con-btn{
-  margin-left: 10rpx;
-  width: 200rpx;
-  height: 60rpx;
+
+.font-two {
+  font-size: 30rpx;
   line-height: 60rpx;
+}
+
+.recommend-cover {
+  width: 700rpx;
+}
+
+.recommend-box {}
+
+.recommend-box text {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+  margin: 20rpx 20rpx 20rpx 0;
   border: 1px solid #000;
-  margin: 10rpx;
+}
+
+.recommend-box text:first-of-type {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 列表 */
+.recommend-list-container {
+  /* background-color: #ebebeb; */
+  padding: 35rpx 35rpx 0rpx;
+}
+
+.per-article {
+  background-color: #fff;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+}
+
+.per-article:last-of-type {
+  margin-bottom: 0rpx;
+}
+
+.article-headdle {
+  padding: 20rpx;
+}
+
+.article-head image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 20rpx 20rpx;
+}
+
+.article-head text {
+  font-size: 30rpx;
+  color: #666;
+  margin: 0rpx 10rpx;
+}
+
+.article-cover {
+  width: 100%;
+}
+
+.article-title {
+  margin: 30rpx;
+}
+
+.article-title text {
+  font-size: 40rpx;
+}
+
+.article-handle-box {
+  display: flex;
+  padding: 0rpx 30rpx;
+  justify-content: space-between;
+}
+
+.article-type text {
+  border: 1px solid #000;
+  padding: 10rpx 20rpx;
+}
+
+.article-handle {
+  display: flex;
+}
+
+/* 注意在小程序中要去掉button的boder的样式，要在伪元素中去掉 */
+
+.article-handle image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.article-handle .btn-transmit {
+  background-color: transparent;
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-transmit::after {
+  border:none;
+}
+
+.article-handle .btn-transmit image {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  left: -5rpx;
 }

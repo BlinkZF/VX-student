@@ -26,3 +26,23 @@ view 容器组件。等同于html中的div
 路由：
     wx.navigateTo  保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabbar 页面。使用 wx.navigateBack 可以返回到原页面。小程序中页面栈最多十层。
     wx.navigateBack  关闭当前页面，返回上一页面或多级页面。可通过 getCurrentPages() 获取当前的页面栈，决定需要返回几层
+
+mode = 'widthFix'  图片自适应
+
+this.setData() 改变小程序中的数据   当设置的值没有的时候，就会自动添加上去
+
+block相当于vue中的template，使用之后不会显示在代码中
+
+wx:key = "" 添加唯一标识符
+
+currentTarget :事件绑定的当前组件
+Target :触发事件的原组件  
+是将冒泡的实质上是，事件在子元素上触发的(事件源对象)。但是真正执行的时候是在父元素上执行的(执行事件对象),
+
+自定义组件：
+
+页面样式复用:
+    1:将相同的样式放到app.wxss中
+    2:将相同的样式放到一个wxss文件中，然后需要使用相对路径的方式进行引用 (@import "../common.wxss";)
+
+wxs:小程序自己的脚本语言
