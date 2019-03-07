@@ -1,4 +1,6 @@
 <wxs src='../utils/filter.wxs' module="filter"></wxs>
+<wxs src='../utils/format.wxs' module="format"></wxs>
+
 <view class='container'>
   <view class='title-container'>
     <text>{{aticleDdatail.title}}</text>
@@ -7,16 +9,45 @@
     <text>{{aticleDdatail.author}}</text>
     <text>{{aticleDdatail.Date}}</text>
   </view>
-  <!-- 轮播图 -->
   <view class='media-container'>
-    <swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" indicator-color="rgba(0, 200, 200, .3)">
+    <!-- 图片 -->
+    <view class="chengDuImage" wx:if="{{aticleDdatail.type == 'chengDuImage'}}">
+      <image src="{{aticleDdatail.media}}" />
+    </view>
+    <!-- 轮播图 -->
+    <swiper class="media-swiper" wx:elif="{{aticleDdatail.type == 'chengDuEssay'}}" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" indicator-color="rgba(0, 200, 200, .3)">
       <block wx:for="{{aticleDdatail.media}}" wx:key="index">
         <swiper-item>
-          <image src='{{item}}'/>
+          <image src='{{item}}'></image>
         </swiper-item>
       </block>
     </swiper>
+    <!-- 视频  不能播放 -->
+    <video wx:elif="{{aticleDdatail.type == 'chengDuVideo'}}" poster="{{aticleDdatail.media[0]}}" duration="20" controls="true" initial-time='10' danmu-list="{{danmuList}}" enable-danmu='true' danmu-btn='true' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
+    <!-- 音乐 -->
+    <view wx:elif="{{aticleDdatail.type == 'chengDuMousic'}}" class='audio-container'>
+      <view class='audio-controler'>
+        <image bindtap='onAudioPlay' wx:if="{{playing}}" src='/image/icon/icon_circle_fill.png'></image>
+        <image bindtap='onAudioPlay' wx:else src='/image/icon/icon_circle.png'></image>
+      </view>
+      <view class='audio-title'>
+        <text>{{aticleDdatail.title}}</text>
+      </view>
+      <view class="audio-from">
+        <text>许巍</text>
+      </view>
+      <view class='audio-progress'>
+        <progress stroke-width='2' percent="{{progressPercent}}" style="width:{{progressWidth+'rpx'}}" />
+        <!-- 进度条组件 -->
+        <view bind:touchstart="onAudioCircleStart" bind:touchmove="onAudioCircleMove" class='progress-circle' style="left:{{progressPercentLeft+'rpx'}}"></view>
+      </view>
+      <view class='audio-time'>
+        <text>{{format(audioCurTime)}}</text>
+        <text>{{format(aticleDdatail.durition)}}</text>
+      </view>
+    </view>
   </view>
+  <!-- 文本 -->
   <view class='contant-container'>
     <text decode="{{true}}">{{filter(aticleDdatail.content)}}</text>
   </view>
@@ -24,3 +55,4 @@
     <text>阅读：{{aticleDdatail.read}}</text>
   </view>
 </view>
+<!-- 时间格式 -->

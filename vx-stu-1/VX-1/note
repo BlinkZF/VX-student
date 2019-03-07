@@ -49,3 +49,4 @@ wxs:小程序自己的脚本语言
 
 wx中隐藏组件：wx:if = "{{false}}"  组件直接没有了 
              hidden = "{{true}}"  组件在，display：none  与vue中的v-show一样
+
