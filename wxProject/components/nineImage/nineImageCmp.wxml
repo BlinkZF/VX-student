@@ -1,0 +1,14 @@
+<!-- components/nineImage/nineImage.wxml -->
+<!-- 九宫格组件 -->
+<view class="container">
+    <view class="image-container">
+        <block wx:for="{{imgUrl}}" wx:key="index">
+            <image class="image" catch:tap="onTap" id="{{item}}" src = "{{item}}"
+            wx:if = "{{index < 9}}"/>
+        </block>
+        <text class="img-num" wx:if = "{{imgUrl.length > 9}}" >{{imgUrl.length}}</text>
+    </view>
+    <view class="title-container">
+        <text>{{minTitle}}为速度而生</text>
+    </view>
+</view>

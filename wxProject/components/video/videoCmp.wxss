@@ -1,0 +1,69 @@
+/* components/video/videoCmp.wxss */
+page {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containter {
+    width: 700rpx;
+    height: 400rpx;
+}
+
+.containter .video {
+    width: 700rpx;
+    height: 400rpx;
+}
+
+.poster-container {
+    position: relative;
+    width: 700rpx;
+    height: 400rpx;
+}
+
+.poster-container .controler {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -50rpx;
+    margin-left: -65rpx;
+    width: 100rpx;
+    height: 130rpx;
+    background-color: rgba(139, 134, 134, 0.3);
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.controler .play-btn {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.controler .duration {
+    text-align: center;
+    display: block;
+    font-size: 30rpx;
+    color: #fff;
+}
+
+.main-title {
+    font-size: 40rpx;
+    padding: 20rpx;
+}
+
+.mask {
+    position: fixed;
+    top: 0rpx;
+    left: 0rpx;
+    width: 750rpx;
+    height: 100%;
+    /* 所有手机的宽高都是这个尺寸 */
+    background-color: rgba(0, 0, 0, .1)
+}

@@ -2,6 +2,8 @@
   "usingComponents":{
     "custom-bigImage":"../../components/bigImage/cpm",
     "custom-pureText":"../../components/pureText/pureCmp",
-    "custom-imgText":"../../components/imgText/imgCmp"
+    "custom-imgText":"../../components/imgText/imgCmp",
+    "custom-nineImage":"../../components/nineImage/nineImageCmp",
+    "custom-video":"../../components/video/videoCmp"
   }
 }

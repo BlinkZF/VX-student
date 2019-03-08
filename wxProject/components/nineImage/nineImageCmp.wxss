@@ -1,0 +1,37 @@
+/* components/nineImage/nineImage.wxss */
+page{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.container {
+    width: 700rpx;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 700rpx;
+    height: 700rpx;
+}
+
+.image-container .image {
+    width: 31%;
+    height: 230rpx;
+}
+.image-container .img-num{
+    background-color:rgba(200,200, 200, .5);
+    position: absolute;
+    padding: 10rpx;
+    right: 45px;
+    bottom: 45px;
+
+}
+.title-container{   
+    padding: 20rpx;
+    font-size: 40rpx;
+    font-weight: 900;
+    text-align: center;
+}
