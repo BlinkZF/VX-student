@@ -1,0 +1,35 @@
+/* components/article/article.wxss */
+.article-container {
+    padding: 20rpx;
+    border: 1px solid #000;
+}
+
+.avatar {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+
+.container-title {
+    font-size: 30rpx;
+    color: #666;
+}
+
+.control-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx;
+    margin-top: 10rpx
+}
+
+.control-box {
+    display: flex;
+}
+
+.box {
+    display: block;
+    margin-left: 25rpx;
+}

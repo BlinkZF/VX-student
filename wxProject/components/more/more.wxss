@@ -1,0 +1,6 @@
+/* components/more/more.wxss */
+.image{
+    width: 50rpx;
+    height: 50rpx;
+    border: 1px solid #000;
+}

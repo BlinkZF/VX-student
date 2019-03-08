@@ -1,0 +1,8 @@
+/* components/tag/tagCmp.wxss */
+.container {
+    padding: 10rxp 20rpx;
+    font-size: 28rpx;
+    border: 1px solid #000;
+    left: 0rpx;
+    display: inline-block;
+}

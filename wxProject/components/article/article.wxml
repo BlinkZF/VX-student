@@ -1,0 +1,36 @@
+<!--components/article/article.wxml-->
+<view class="article-container">
+    <view>
+        <image class="avatar" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1955862343,665716402&fm=26&gp=0.jpg"/>
+        <text class="container-title">张凡被一百多万人关注了</text>
+    </view>
+    <view >
+        <custom-bigImage wx:if="{{type == 0}}" mode = "widthFix"
+            img-src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1830667072.jpg" 
+            min-title="14年经典端游IP改编,震撼上线!诠释超大自由立体空间 畅快陆海"/>
+        <custom-pureText wx:elif="{{type == 1}}"
+            main-title = "{{}}"
+            sub-head ="{{}}"/>
+        <custom-imgText wx:elif="{{type == 2}}"
+            main-title = "{{}}"
+            sub-head ="{{}}"/>
+        <custom-nineImage wx:elif="{{type == 3}}"
+            imgUrl = "{{}}"
+            main-title = "{{}}"/>
+        <custom-video wx:elif="{{type == 4}}"
+            main-title = "{{}}"
+            src = "{{}}"
+            duration = "{{}}"
+            poster = "{{}}"
+            video-id = "{{}}"/>
+    </view>
+    <view class ="control-container">
+        <view >
+            <custom-tag tag ="{{}}" tagId = "{{}}"/>
+        </view>
+        <view class="control-box" >
+            <custom-more class="box" moreData ="{{}}"/>
+            <custom-like class="box" like = "{{}}"/>
+        </view>
+    </view>
+</view>

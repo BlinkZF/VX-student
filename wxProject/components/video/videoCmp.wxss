@@ -1,10 +1,10 @@
 /* components/video/videoCmp.wxss */
-page {
+/* page {
     background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .containter {
     width: 700rpx;

@@ -1,5 +1,6 @@
 {
-  "usingComponents":{
+  "component": true,
+  "usingComponents": {
     "custom-bigImage":"../../components/bigImage/cpm",
     "custom-pureText":"../../components/pureText/pureCmp",
     "custom-imgText":"../../components/imgText/imgCmp",
@@ -7,7 +8,6 @@
     "custom-video":"../../components/video/videoCmp",
     "custom-tag":"../../components/tag/tagCmp",
     "custom-more":"../../components/more/more",
-    "custom-like":"../../components/like/like",
-    "custom-article":"../../components/article/article"
+    "custom-like":"../../components/like/like"
   }
 }

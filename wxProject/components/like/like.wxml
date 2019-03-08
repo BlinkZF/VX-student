@@ -1,0 +1,6 @@
+<!--components/like/like.wxml-->
+<!-- 点赞组件 -->
+<view class="container" >
+    <image class = "image" catch:tap = "onChange" src ="./image/like.png" hidden="{{like}}" />
+    <image class = "image" catch:tap = "onChange" src ="./image/nolike.png" hidden="{{!like}}"/>
+</view>

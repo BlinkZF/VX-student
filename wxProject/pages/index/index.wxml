@@ -6,12 +6,17 @@
 <custom-imgText main-title="哈哈哈哈哈哈哈哈哈哈或或或或" 
                  sub-head="啊啊啊啊啊啊啊啊啊啊" 
                  imgSrc="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1830667072.jpg" /> -->
-
 <!-- <custom-nineImage /> -->
-<custom-video 
+<!-- <custom-video 
     src = "http://vqzone.gtimg.com/1006_4e84cf264d2d4ac0b2ea48728f0cdbbb.f20.mp4?ptype=http&vkey=15A56C466262F20D555894FF4CFF3335573B3B7694C8E61461D2440EAE4DCD0CDA95019C4A3CD84DB4E128D38530781847AAF15262CF0755&sdtfrom=v1000&owner=527141661"
     poster = "http://img.soogif.com/OV5e3z9HAz7g4ZvJQ0H48IBiD41LwS0w.gif"
     duration = "41"
     mainTitle = "优视频,看啥都快！"
     videoId = "videoId2018"
-/>
+/> -->
+<!-- <custom-tag tag="心理" tagId="3" /> -->
+<!-- <custom-more moreData = "张凡"/> -->
+<!-- <custom-like like = true/> -->
+<custom-article type = "0" 
+                img-src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1830667072.jpg" 
+                min-title="14年经典端游IP改编,震撼上线!诠释超大自由立体空间 畅快陆海"/>

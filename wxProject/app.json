@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "components/bigImage/cpm"
+    "components/bigImage/cpm",
+    "pages/type/type"
   ],
   "window": {
     "backgroundTextStyle": "light",

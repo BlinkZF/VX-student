@@ -1,9 +1,9 @@
 /* components/nineImage/nineImage.wxss */
-page{
+/* page{
     display: flex;
     flex-direction: column;
     align-items:center;
-}
+} */
 .container {
     width: 700rpx;
 }

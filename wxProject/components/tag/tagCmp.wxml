@@ -1,0 +1,3 @@
+<!-- components/tag/tagCmp.wxml -->
+<!-- 按钮组件 -->
+<view class="container" catch:tap= "onTap">{{tag}}</view>
