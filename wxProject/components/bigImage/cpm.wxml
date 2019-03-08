@@ -1,0 +1,5 @@
+<!--components/bigImage/cpm.wxml-->
+<view  class="comtainter" >
+    <image class="image" mode = "widthFix" src="{{imgSrc}}" />
+    <text class="text" >{{minTitle}}</text>
+</view>

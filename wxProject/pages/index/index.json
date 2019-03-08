@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "custom-bigImage":"../../components/bigImage/cpm",
+    "custom-pureText":"../../components/pureText/pureCmp",
+    "custom-imgText":"../../components/imgText/imgCmp"
+  }
+}

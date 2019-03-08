@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<custom-bigImage img-src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1830667072.jpg" 
+                 min-title="14年经典端游IP改编,震撼上线!诠释超大自由立体空间 畅快陆海" />
+
+<custom-pureText/>
+<custom-imgText main-title = "哈哈哈哈哈哈哈哈哈哈或或或或"
+                sub-head = "啊啊啊啊啊啊啊啊啊啊"
+                imgSrc  = "https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1830667072.jpg"/>

@@ -1,0 +1,13 @@
+/* components/bigImage/cpm.wxss */
+.comtainter{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.image{
+    width: 100%;
+}
+.text{
+    font-size: 30rpx;
+    padding: 30rpx;
+}
