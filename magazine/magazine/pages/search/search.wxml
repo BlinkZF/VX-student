@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <z-search value="{{value}}"></z-search>
+
+    <view  class="recommendContainer">
+        <view  class="word">#{{value}}></view>
+        <view  class="recommendList" >
+            <view  class="recommend" wx:for="{{recommend}}" wx:key="*this">{{item}}</view>
+        </view>
+    </view>
+
+    <z-articallist artical-list="{{articallist}}" more="{{more}}" word="{{value}}"></z-articallist>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "z-art": "/components/artical/cmp",
+    "z-circle": "/components/cicle/cmp"
+  }
+}

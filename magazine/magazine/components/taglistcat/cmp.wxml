@@ -1,0 +1,11 @@
+
+<view class="container">
+
+    <slot name="before"></slot>
+    <z-tag wx:for="{{mark}}" wx:key="{{index}}" class="tag"
+    tag-word="{{item.tag}}"
+    tag-id="{{item.tagId}}"
+    ></z-tag>
+
+    <slot name="after"></slot>
+</view>

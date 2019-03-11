@@ -1,0 +1,29 @@
+<view class="container">
+    <z-search value="{{searchWord}}"></z-search>
+    <view  class="markContainer">
+        <view class="markControl">
+            <view class="myMagazine">我的杂志</view>
+            <view class="mangeMagazine">管理杂志</view>
+        </view>
+        
+        <z-taglist mark="{{myTagList}}">
+            <z-add style="margin-right :  20rpx" slot="before" ></z-add>
+        </z-taglist>
+    </view>
+
+
+    <view class=".tagListContaner" >
+        <view class="" wx:for="{{tagInfoList}}" wx:for-item="tagItem" wx:key="">
+            <view >{{tagItem.title}} > </view>
+            <view >
+                <view  class="tag" wx:for="{{tagItem.tagList}}" wx:key="">
+                    <text  class="tagText"> # {{item.tag}}</text>
+                    <z-subcrioe tag="{{item.tag}}" tag-id="{{item.tagId}}" bind:tap="moreGetTag"></z-subcrioe>
+                </view>
+                
+            </view>
+        </view>
+        
+    </view>
+      
+</view>

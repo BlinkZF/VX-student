@@ -1,0 +1,4 @@
+{"usingComponents":{
+    "z-search": "/components/search/cmp" ,
+    "z-articallist": "/components/articallist/cmp" 
+ }}

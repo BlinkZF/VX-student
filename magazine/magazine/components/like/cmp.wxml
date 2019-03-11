@@ -1,0 +1,4 @@
+<view >
+    <image class="image"  catch:tap="onLike"    hidden="{{like}}" src="../../image/icon/Icon_circle.png" />
+    <image class="image" catch:tap="onLike"  hidden="{{!like}}" src="../../image/icon/Icon_circle_fill.png" />
+</view>

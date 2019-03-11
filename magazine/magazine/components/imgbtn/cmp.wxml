@@ -1,0 +1,4 @@
+<!--components/imgbtn/cmp.wxml-->
+<button plain="{{true}}" class="container" open-type="{{openType}}" bindgetuserinfo="getInfo">                                                                                                                                                                                                                                                             
+     <slot name="img"></slot>
+</button>

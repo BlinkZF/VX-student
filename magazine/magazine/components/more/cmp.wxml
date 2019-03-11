@@ -1,0 +1,4 @@
+<!--components/more/cmp.wxml-->
+<view >
+    <image class="image" bindtap="noCaidan" data-name="{{artical}}" src="../../image/icon/Icon_more.png"  />
+</view>

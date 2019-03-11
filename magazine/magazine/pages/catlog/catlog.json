@@ -1,0 +1,7 @@
+{ "usingComponents":{
+
+   "z-subcrioe": "/components/subcribe/cmp" ,
+   "z-taglist": "/components/taglistcat/cmp" ,
+   "z-add": "/components/add/cmp" ,
+   "z-search": "/components/search/cmp" 
+}}

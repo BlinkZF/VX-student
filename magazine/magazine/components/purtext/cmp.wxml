@@ -1,0 +1,6 @@
+<!--components/purtext/cmp.wxml-->
+
+<view class="container">
+<view  class="maintitle">{{mainTitle}}</view>
+<view  class="subhead">{{subHead}}</view>
+</view>

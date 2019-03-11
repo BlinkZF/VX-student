@@ -1,0 +1,13 @@
+<!--components/articallist/cmp.wxml-->
+<view class="container" >
+
+<z-art 
+class="art"
+wx:for="{{articalList}}"
+artical-d="{{item}}"
+wx:key="{{artId}}"
+
+></z-art>
+<z-circle hidden="{{!loading}}" class="loading"></z-circle>
+<text wx:if="{{noMoreData}}" class="noMore">没有更多了</text>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+    <text class="bigTitle">{{magazineId == 0 ? date : magazineTypeArr[magazineId]}}</text>
+    <text class="title">{{recommend.title}}</text>
+    <image class="image" src="{{recommend.imgSrc}}" wx:if="{{recommend.imgSrc}}" />
+
+    <z-taglist mark="{{mark}}">  
+     <z-add slot="before" class="add"  wx:if="{{8 == mark[0].typeId}}"></z-add>
+     <view slot="after" class="toCat" catch:tap="oncat" wx:if="{{8 == mark[0].typeId}}">--</view>
+    </z-taglist>
+
+    <view class="skeleton" hidden="{{recommend.imgSrc}}">
+        <view class="loader"></view>
+    </view>
+</view>

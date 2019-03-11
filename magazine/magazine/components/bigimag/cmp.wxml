@@ -1,0 +1,5 @@
+<!--components/bigimag/cmp.wxml-->
+<view class="container">
+<image class="image"  mode="widthFix" src="{{imgSrc}}" />
+<text  class="text">{{wordSrc}}</text>
+</view>

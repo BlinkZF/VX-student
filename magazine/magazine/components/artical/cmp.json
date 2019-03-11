@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "z-bigImag": "/components/bigimag/cmp",
+    "z-purWord": "/components/purtext/cmp",
+    "z-imgText": "/components/imgtext/cmp",
+    "z-nineImg": "/components/nineImag/cmp",
+    "z-jpgVideo": "/components/jpgvideo/cmp",
+    "z-tag": "/components/tag/cmp",
+    "z-more": "/components/more/cmp",
+    "z-like": "/components/like/cmp",
+    "z-imgbtn": "/components/imgbtn/cmp"
+  }
+}

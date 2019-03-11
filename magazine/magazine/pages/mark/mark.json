@@ -1,0 +1,13 @@
+{
+    "usingComponents":{
+
+        "z-artlist": "/components/articallist/cmp",
+        "z-tagbar": "/components/tagbar/cmp",
+        "z-index": "/components/Aindex/cmp",
+        "z-taglist": "/components/taglist/cmp",
+        "z-add": "/components/add/cmp",
+        "z-loading": "/components/cicle/cmp",
+        "z-imgbtn": "/components/imgbtn/cmp"
+    }
+    
+}

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "z-taglist":"/components/taglist/cmp",
+    "z-add":"/components/add/cmp"
+    
+  }
+}

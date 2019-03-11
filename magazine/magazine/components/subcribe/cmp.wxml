@@ -1,0 +1,1 @@
+<view class="container {{class == 'common' ? '' : 'subscribe'}}" bind:tap="onTap">{{class == 'common' ? '订阅' : '已订阅'}}</view>

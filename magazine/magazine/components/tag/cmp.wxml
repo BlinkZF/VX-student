@@ -1,0 +1,3 @@
+<!--components/tag/cmp.wxml-->
+<view  catch:tap="onTap"
+ class="container">{{tagWord}}</view>

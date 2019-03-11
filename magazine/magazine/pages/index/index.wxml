@@ -1,0 +1,41 @@
+<!-- <z-bigImag img-src="https://gss0.baidu.com/7051cy89RMgCncy6lo7D0j9wexYrbOWh7c50/activityofmoney/moneypc.jpg" word-src="dsfsdkhfsdhfksdfhk"></z-bigImag>
+<z-purWord sub-head="哈哈哈哈哈哈哈" main-title="哈哈哈哈哈哈哈"></z-purWord>
+<z-imgText 
+sub-head="哈哈哈哈哈哈哈哈哈哈哈哈哈哈" 
+main-title="哈哈哈哈哈哈哈哈哈哈哈哈哈" 
+img-src="https://gss0.baidu.com/7051cy89RMgCncy6lo7D0j9wexYrbOWh7c50/activityofmoney/moneypc.jpg" word-src="dsfsdkhfsdhfksdfhk"></z-imgText>
+<z-nineImg
+sub-head="哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+imagArr="{{}}"
+></z-nineImg>
+<z-jpgVideo
+src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+poster="https://upfile.asqql.com/2009pasdfasdfic2009s305985-ts/2018-10/201810922252959666.gif"
+duration="41'"
+main-title="gdsgfdgssgfgsd"
+video-id="video201801"
+></z-jpgVideo>
+
+<z-tag 
+tag-word="心理"
+tag-id="3"
+></z-tag>
+<z-more
+artical="心理"
+></z-more>
+<z-like
+articalLike="true"
+></z-like> -->
+<!-- <z-art class="art"
+wx:for="{{IndexArticleLis}}"
+artical-d="{{item}}"
+wx:key="{{artId}}"
+
+></z-art> -->
+<z-tagbar catch:nav="onNav" class="nav"></z-tagbar>
+<z-index magazine-id="{{magazineId}}" class="index" recommend="{{RecommendInfo}}" mark="{{MarkTypeList}}"></z-index>
+
+<z-artlist artical-list="{{IndexArticleLis}}" more="{{getmore}}" magazine-Id="{{magazineId}}"></z-artlist>
+<view class="loadingContainer" wx:if="{{loading}}">
+    <z-loading class="loading"></z-loading>
+</view>

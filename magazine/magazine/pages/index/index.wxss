@@ -1,0 +1,29 @@
+/* pages/index/index.wxss */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.index{
+    margin-top: 110rpx;
+    display: block;
+}
+.loadingContainer{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30rpx;
+    margin-left: -30rpx;
+    display: block;
+}
+

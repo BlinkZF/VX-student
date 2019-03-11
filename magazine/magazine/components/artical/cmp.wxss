@@ -1,0 +1,39 @@
+/* components/artical/cmp.wxss */
+.contianer{
+    background-color: #fff;
+}
+.markContiner{
+    padding: 20rpx;
+  
+}
+.avatar{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.text{
+    font-size: 26rpx;
+    color: #666;
+}
+.controlContaner{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20rpx;
+    margin-top: 10rpx;
+
+}
+.controlBox{
+    display: flex;
+}
+.box{
+    display: block;
+    margin-left: 25rpx;
+}
+
+.share image{
+    width: 50rpx;
+    height: 50rpx;
+}

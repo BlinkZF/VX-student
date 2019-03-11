@@ -1,0 +1,32 @@
+/* pages/catlog/catlog.wxss */
+.tagListContaner{
+    width: 700rpx;
+    margin: 50rpx auto 0;
+}
+
+.tag{
+    display: flex;
+    justify-content: space-between;
+    margin: 30rpx 0;
+}
+.tagText{
+    font-size: 28rpx;
+}
+
+.markContainer{
+    width: 700rpx;
+    margin: 0 auto;
+}
+.markControl{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40rpx 0;
+}
+.myMagazine{
+    font-size: 40rpx;
+
+}
+.mangeMagazine{
+    font-size: 30rpx
+}

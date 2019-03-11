@@ -1,0 +1,67 @@
+
+<view class="contianer">
+    <view class="markContiner">
+        <image class="avatar" src="{{articalD.mark.avatar}}" />
+        <text class="text" >{{articalD.mark.people}}等{{articalD.mark.count}}人亲了</text>
+    </view >
+    <view  class="articalBox">
+    <z-bigImag
+    img-src="{{articalD.imgArray[0]}}"
+    word-src="{{articalD.mainTitle}}"
+     wx:if="{{ articalD.type === 0}}"></z-bigImag>
+
+
+    <z-imgText 
+    sub-head="{{articalD.subHead}}"
+    main-title="{{articalD.mainTitle}}"
+    img-src="{{articalD.imgArray[0]}}"
+    wx:elif="{{ articalD.type === 2 }}"></z-imgText>
+
+
+    <z-jpgVideo
+    src="{{articalD.video.src}}"
+    poster="{{articalD.video.poster}}"
+    duration="{{articalD.video.duration}}"
+    main-title="{{articalD.mainTitle}}"
+    video-id="{{articalD.videoId}}"
+    wx:elif="{{ articalD.type === 3 }}"></z-jpgVideo>
+
+
+    <z-nineImg
+    sub-head="{{ articalD.mainTitle}}"
+    imagArr="{{ articalD.imgArray}}"
+    wx:elif="{{ articalD.type === 1 }}"></z-nineImg>
+
+
+    <z-purWord
+    sub-head="{{articalD.subHead}}"
+    main-title="{{articalD.mainTitle}}"
+    wx:else></z-purWord>
+    </view>
+
+    <view class="controlContaner">
+        <view >
+            <z-tag
+            tag-word="{{articalD.tag}}"
+            tag-id="{{articalD.tagId}}"
+            ></z-tag>
+        </view>
+
+        <view  class="controlBox">
+            <z-more class="box"
+            artical="{{articalD.tag}}"
+            ></z-more>
+                    <view class="share box">
+             <z-imgbtn  open-type="share">
+            <image slot="img" src="/images/mark/relay.png"  />
+            </z-imgbtn> 
+        </view>
+            <z-like class="box"
+            like="{{likeStatus}}" catch:like="like"
+            ></z-like>
+        </view>
+
+    </view>
+
+
+</view>
